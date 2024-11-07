@@ -1,0 +1,146 @@
+/* Resetando margens e padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilo geral do body */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #2C3E50; /* Fundo azul escuro */
+    color: #ECF0F1; /* Cor de texto branco gelo */
+    line-height: 1.6;
+}
+
+/* Cabeçalho */
+header {
+    background-color: #34495E; /* Fundo mais escuro para o cabeçalho */
+    color: #ECF0F1; /* Texto branco gelo */
+    padding: 15px 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 100;
+}
+
+header .logo {
+    display: inline-block;
+    margin-left: 20px;
+}
+
+header h1 {
+    font-size: 24px;
+    color: #F39C12; /* Cor amarela para o título */
+}
+
+nav ul {
+    list-style: none;
+    text-align: center;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #ECF0F1;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Main content */
+main {
+    margin-top: 80px; /* Espaçamento abaixo do cabeçalho fixo */
+    padding: 20px;
+}
+
+/* Estilo para seções de páginas */
+.page {
+    display: none;
+}
+
+.page h2 {
+    font-size: 28px;
+    margin-bottom: 10px;
+    color: #F39C12; /* Cor amarela para os subtítulos */
+}
+
+.page p {
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+/* Grid para listar os jogos */
+.game-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(220px, 1fr)); /* Ajuste de colunas dinâmicas */
+    gap: 20px;
+    margin-top: 20px;
+}
+
+/* Estilo para cada jogo */
+.game {
+    background-color: #34495E; /* Fundo das caixas de jogos */
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    transition: transform 0.3s ease; /* Efeito de transição ao passar o mouse */
+}
+
+.game:hover {
+    transform: scale(1.05); /* Efeito de zoom ao passar o mouse */
+}
+
+.game img {
+    width: 100%; /* Ajusta a largura das imagens */
+    height: auto; /* Mantém a proporção */
+    border-radius: 8px;
+}
+
+.game h3 {
+    font-size: 20px;
+    margin-top: 10px;
+    color: #F39C12; /* Cor amarela para o título do jogo */
+}
+
+.game p {
+    font-size: 16px;
+    color: #ECF0F1;
+}
+
+button {
+    background-color: #F39C12;
+    color: #34495E;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #E67E22; /* Cor mais forte ao passar o mouse */
+}
+
+/* Estilo para o rodapé */
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #34495E;
+    color: #ECF0F1;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+/*
